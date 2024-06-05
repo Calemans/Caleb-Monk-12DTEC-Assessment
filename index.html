@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Add a title here</title>
+        <title>Caleb 2.8 assessment</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
         <!--Installing A-Frame-->
         <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
@@ -14,6 +14,8 @@
         <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
         <!-- The aframe-extras version 5 add-on enables glb animations and lots of other things -->
         <script src="https://rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script> 
+        <!-- curvy -->
+
     </head>
     <body>
         <a-scene>
@@ -51,6 +53,13 @@
                 width="100"
                 color="blue">
              </a-box>
+            <!-- top front  wall -->
+            <a-box 
+                position="-2 13 -22"
+                height="10" 
+                width="100"
+                color="blue"
+            ></a-box>
             <!-- front left wall -->
             <a-box 
                 position="-32 3 -22"
@@ -63,16 +72,9 @@
                 position="28 3 -22"
                 height="10" 
                 width="40"
-                color="blue">
-             </a-box>
-            <!-- top front wall -->
-            <a-box 
-                position="-2 13 -22"
-                height="10" 
-                width="100"
-                color="blue">
-             </a-box>
-            <!-- back left wall -->
+                color="blue">                                             
+            </a-box>                                                                             
+            <!-- left wall -->                                     
              <a-box 
                 position="-50 8 -70"
                 rotation="0 -90 0"
@@ -80,7 +82,7 @@
                 width="100"
                 color="blue">
             </a-box>
-            <!-- back right wall-->
+            <!-- right wall-->
             <a-box 
                 position="46 8 -70"
                 rotation="0 -90 0"
@@ -91,22 +93,22 @@
             <!-- 'GOLF' tittle-->
             <a-gltf-model
                 src="images/g_letter.glb"
-                position="-9.2 13 -23.5"
+                position="-9.2 12 -23.5"
                 scale="10 10 10"
             ></a-gltf-model>
             <a-gltf-model
                 src="images/o_letter.glb"
-                position="-3.2 13 -23.5"
+                position="-3.2 12 -23.5"
                 scale="10 10 10"
             ></a-gltf-model>
             <a-gltf-model
                 src="images/l_letter.glb"
-                position="2.3 13 -23.5"
+                position="2.3 12 -23.5"
                 scale="10 10 10"
             ></a-gltf-model>
             <a-gltf-model
                 src="images/f_letter.glb"
-                position="7.7 13 -23.5"
+                position="7.7 12 -23.5"
                 scale="10 10 10"
             ></a-gltf-model>
             <!--golf course 1 -->
@@ -133,14 +135,73 @@
                 scale="0.35 0.35 0.35"
                 position="13.6 -1.2 -34.5"
                 animation__first="easing: linear; property: 
-                position; to: 34.1 -2.2 -34.9; dur: 2500;                         startEvents: loaded,                         animationcomplete__second"
+                position; to: 34.1 -2.2 -34.9; dur: 2500; startEvents: loaded,                                                                animationcomplete__second"
                 animation__second="easing: linear; property: 
-                position; to:  34.1 -1.2 -34.9; dur: 2500; startEvents: loaded,                        animationcomplete__third"
+                position; to:  34.1 -1.2 -34.9; dur: 2500; startEvents: loaded,                                                               animationcomplete__third"
                 animation__third="easing: linear; property:
-                position; to: 13.6 -1.2 -34.5; dur: 1; startEvents: loaded,                            animationcomplete__first"
+                position; to: 13.6 -1.2 -34.5; dur: 1; startEvents: loaded,                                                                   animationcomplete__first" 
+            ></a-sphere>
+            <!--golf course 2 -->
+            <a-cylinder
+                color="green"
+                position="-35.4 -1.85 -36"
+                scale="9 0.3 7"
+            ></a-cylinder>
+            <a-torus 
+                color="black" 
+                arc="360" 
+                scale="9 7 3"
+                radius-tubular="0.02" 
+                position="-35.4 -1.8 -36"
+                rotation="-90 0 0"
+            ></a-torus>
+            <a-cylinder
+                color="green"
+                position="-35 -1.9 -62.8"
+                scale="4 0.3 12"
+            ></a-cylinder>
+            <a-torus 
+                color="black" 
+                arc="360" 
+                scale="4 12 3"
+                radius-tubular="0.02" 
+                position="-35 -1.8 -62.8"
+                rotation="-90 0 0"
+            ></a-torus>
+            <a-box
+                color="gray"
+                position="-35 -2 -52.2"
+                rotation="60 0 0"
+            ></a-box>
+            <a-cylinder
+                color="white"
+                scale="0.5 0.5 0.5"
+                position="-35 -1.9 -34"
+            ></a-cylinder>
+            <a-sphere
+                color="white"
+                scale="0.35 0.35 0.35"
+                position="-35 -1.2 -71"
+                animation__first="easing: linear; property: 
+                position; to: -35 -2 -34; dur: 1500; startEvents: loaded,                         animationcomplete__second"
+                animation__second="easing: linear; property: 
+                position; to: -35 -1.65 -33.9; dur: 2500; startEvents: loaded,                         animationcomplete__third"
+                animation__third="easing: linear; property: 
+                position; to: -35 5.2 -43; dur: 450;  startEvents: loaded,                        animationcomplete__fourth"
+                animation__fourth="easing: linear; property: 
+                position; to: -35 5.35 -45; dur: 300; startEvents: loaded,                        animationcomplete__fifth"
+                animation__fifth="easing: linear; property: 
+                position; to: -35 5.5 -46; dur: 300; startEvents: loaded,                        animationcomplete__sixth"
+                animation__sixth="easing: linear; property: 
+                position; to: -35 5.35 -47; dur: 180; startEvents: loaded,                        animationcomplete__seventh"
+                animation__seventh="easing: linear; property: 
+                position; to: -35 5.2 -48; dur: 1000;  startEvents: loaded,                        animationcomplete__eighth"
+                animation__eighth="easing: linear; property: 
+                position; to: -35 -1.2 -52.2; dur: 2500; startEvents: loaded,                        animationcomplete__ninth"
+                animation__ninth="easing: linear; property:
+                position; to: -35 -1.2 -71; dur: 1; startEvents: loaded,                            animationcomplete__first"
             ></a-sphere>
 
-            
         </a-scene>
     </body>
 </html>
