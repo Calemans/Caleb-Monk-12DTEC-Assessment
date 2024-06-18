@@ -15,14 +15,14 @@
         <!-- The aframe-extras version 5 add-on enables glb animations and lots of other things -->
         <script src="https://rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script> 
         <!-- curvy -->
-
+        
     </head>
     <body>
-          <a-scene physics="gravity: -9.8;restitution: 0.1" inspector-plugin-recast>
-     <!--       <a-sky color="skyblue"></a-sky>  
+        <a-scene>
+            <a-sky color="skyblue"></a-sky>  
             <a-camera>
                 <a-cursor></a-cursor>
-            </a-camera>  -->
+            </a-camera>
             <!-- floor -->
             <a-plane 
                 position="-2 -2 -70"
@@ -322,24 +322,7 @@
                 rotation='0 0 90'
                 color='white'
                 scale='0.5 5 0.5'
-            ></a-cylinder>        
-<!-- navmesh -->
-              <a-gltf-model
-                  src="navmesh.gltf"
-                  nav-mesh
-visible="false"
-                  position="0 0 0"
-              ></a-gltf-model>
-              <a-entity id="rig" 
-                  position="0 -2.4 0" 
-                  movement-controls="constrainToNavMesh: true;speed:0.5;">
-                  <a-entity camera id="camera" 
-                      position="0 1.6 0" 
-                      look-controls
-                      extended-wasd-controls>
-                  </a-entity>
-              </a-entity>
-              
+            ></a-cylinder>                
         </a-scene>
     </body>
 </html>
