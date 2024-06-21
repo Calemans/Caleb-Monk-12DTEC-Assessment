@@ -30,14 +30,14 @@
             height="100" 
             width="100" 
             rotation="-90 0 0" 
-            color="grey"
+            src="images/pattern.jpg" 
         ></a-plane>
         <a-plane 
             position="-2 -2 -70" 
             height="100" 
             width="100" 
             rotation="90 0 0" 
-            color="grey"
+            src="images/pattern.jpg" 
         ></a-plane>
         <!-- roof -->
         <a-box 
@@ -45,34 +45,34 @@
             height="100" 
             width="100" 
             rotation="90 0 0" 
-            color="grey"
+            src="images/pattern.jpg" 
         ></a-box>
         <!-- back wall -->
         <a-box 
             position="-2 8 -118" 
             height="20" 
             width="100" 
-            color="blue"
+            src="images/pattern.jpg" 
         ></a-box>
         <!-- top front  wall -->
         <a-box 
             position="-2 13 -22" 
             height="10" width="100" 
-            color="blue"
+            src="images/pattern.jpg" 
         ></a-box>
         <!-- front left wall -->
         <a-box 
             position="-32 3 -22" 
             height="10" 
             width="40" 
-            color="blue"
+            src="images/pattern.jpg" 
         ></a-box>
         <!-- front right wall -->
         <a-box 
             position="28 3 -22" 
             height="10" 
             width="40" 
-            color="blue"
+            src="images/pattern.jpg" 
         ></a-box>
         <!-- left wall -->
         <a-box 
@@ -80,7 +80,7 @@
             rotation="0 -90 0" 
             height="20" 
             width="100" 
-            color="blue"
+            src="images/pattern.jpg" 
         ></a-box>
         <!-- right wall-->
         <a-box 
@@ -88,7 +88,7 @@
             rotation="0 -90 0" 
             height="20" 
             width="100" 
-            color="blue"
+            src="images/pattern.jpg" 
         ></a-box>
         <!-- 'GOLF' tittle-->
         <a-gltf-model 
@@ -123,7 +123,7 @@
             scale="15 10 4" 
             radius-tubular="0.02" 
             position="25 -1.86 -35"
-            rotation="-90 0 0"
+            rotation="-90 0 0" 
         ></a-torus>
         <a-cylinder 
             color="white" 
@@ -331,6 +331,87 @@
             color='white' 
             scale='0.5 5 0.5'
         ></a-cylinder>
+        <!-- lighting -->
+        <a-light
+            id="dir" 
+            type="spot"
+            intensity="0.5"
+            position="-46 17.5 -19.6"
+            rotation="0 -50 0"
+            color="white"
+        ></a-light>
+        <a-light
+            id="dir" 
+            type="spot"
+            intensity="0.5"
+            position="46 17.5 -19.6"
+            rotation="0 50 0"
+            color="white"
+        ></a-light>
+        <a-light
+            id="dir" 
+            type="spot"
+            intensity="0.5"
+            position="-46 17.5 -114"
+            rotation="0 -140 0"
+            color="white"
+        ></a-light>
+        <a-light
+            id="dir" 
+            type="spot"
+            intensity="0.5"
+            position="46 17.5 -114"
+            rotation="0 -216 0"
+            color="white"
+        ></a-light>
+        <a-light
+            id="floor" 
+            type="spot"
+            intensity="0.5"
+            position="-20.4 -5.1 -100"
+            rotation="100 0 0"
+            color="white"
+        ></a-light>
+        <a-light
+            id="floor" 
+            type="spot"
+            intensity="0.5"
+            position="20.4 -5.1 -100"
+            rotation="100 0 0"
+            color="white"
+        ></a-light>
+        <a-light
+            id="floor" 
+            type="spot"
+            intensity="0.5"
+            position="20.4 -5.1 -65.7"d
+            rotation="100 0 0"
+            color="white"
+        ></a-light> 
+        <a-light
+            id="floor" 
+            type="spot"
+            intensity="0.5"
+            position="-20.4 -5.1 -65.7"
+            rotation="100 0 0"
+            color="white"
+        ></a-light>
+        <a-light
+            id="dur" 
+            type="spot"
+            intensity="0.5"
+            position="20 0 0"
+            rotation="0 0 0"
+            color="white"
+        ></a-light>
+        <a-light
+            id="dur" 
+            type="spot"
+            intensity="0.5"
+            position="-20 0 0"
+            rotation="0 0 0"
+            color="white"
+        ></a-light> 
         <!-- navmesh -->
         <a-gltf-model 
             src="navmesh.gltf" 
