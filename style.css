@@ -1,0 +1,27 @@
+body {
+ background-image: url("images/pattern.jpg");
+  h1 {
+    color: pink; 
+    font-size: 250px;
+    font-family: "Copperplate", Fantasy;
+    margin-left: 100px;
+    margin-top: 30px;
+    float: left;
+  }
+  #start {
+    color: deepskyblue; 
+    font-size: 150px;
+    text-decoration: none;
+    font-family: "Courier New", Monospace;
+    margin-left: 800px;
+  }
+  #instructions {
+    color: red; 
+    font-size: 70px;
+    text-decoration: none;
+    font-family: "Brush Script MT", Cursive;
+    margin-left: 1000px;
+  }
+
+
+}
